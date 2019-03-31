@@ -8,9 +8,12 @@ module.exports = {
   devServer: {
     contentBase: path.resolve(__dirname, "dist")
   },
-  entry: "./src/index.js",
+  entry: {
+    main: "./src/index.js",
+    vendor: "./src/vendor.js"
+  },
   output: {
-    filename: "main.[contentHash].js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   },
   plugins: [
@@ -30,7 +33,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"]
+        use: ["style-loader", "css-loader", "postcss-loader", "sass-loader"]
       },
       {
         test: /\.html$/,
