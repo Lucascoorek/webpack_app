@@ -9,6 +9,9 @@ $gray: lighten($black, 70%);
   position: absolute;
   top: -15px;
   left: 25px;
+  @include mQ(767px) {
+    width: 20%;
+  }
 }
 
 // .header {

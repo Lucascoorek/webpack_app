@@ -33,10 +33,14 @@
   width: 220px;
   height: 220px;
   // overflow: hidden;
+  @include mQ(767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .container__image {
   width: 100%;
-  // display: block;
+  display: block;
   height: 100%;
 }
 .container__text {
@@ -49,4 +53,8 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 2em;
+  @include mQ(767px) {
+    padding-top: 20%;
+    padding-left: 15%;
+  }
 }
