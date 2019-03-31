@@ -9,7 +9,8 @@
 }
 
 .grid__container::-webkit-scrollbar {
-  width: 5px;
+  width: 3px;
+  opacity: 0.5;
 }
 
 .grid__container::-webkit-scrollbar-track {

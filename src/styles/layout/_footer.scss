@@ -2,16 +2,36 @@
   position: absolute;
   width: 100%;
   background-color: white;
-  bottom: -5;
+  bottom: 0;
   left: 0;
   display: flex;
   justify-content: space-between;
   z-index: 2;
+  font-size: small;
+  padding: 20px 40px;
+  color: lighten(#000000, 70%);
 }
+.footer__left {
+  a[href^="mailto:"] {
+    text-decoration: none;
+    color: lighten(#000000, 30%);
+  }
+}
+
 .footer__right {
   display: flex;
 }
-.footer__links {
+.footer__text {
+  padding-right: 5px;
+}
+.footer__list {
+  padding-left: 0;
   display: flex;
   list-style: none;
+  li {
+    padding: 0 5px;
+  }
+}
+.fab {
+  color: lighten(#000000, 70%);
 }

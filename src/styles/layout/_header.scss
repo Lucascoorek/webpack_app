@@ -44,12 +44,16 @@ button.navbar-toggler:focus {
   display: flex;
   justify-content: space-between;
 }
+
 .nav-link {
   position: relative;
   padding-bottom: 5px;
-  color: white;
+
+  opacity: 0.5;
   font-size: small;
   &:hover {
+    opacity: 1;
+    color: $black;
     padding-bottom: 4px;
     border-bottom: 1px solid $black;
   }
