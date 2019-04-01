@@ -36,7 +36,6 @@
     "webpack-dev-server": "^3.2.1"
   },
   "dependencies": {
-    "font-awesome": "^4.7.0",
     "gh-pages": "^2.0.1"
   },
   "browserslist": [
