@@ -32,26 +32,28 @@
 .container__figure {
   width: 220px;
   height: 220px;
-  // overflow: hidden;
+  // height: auto;
+  overflow: hidden;
   @include mQ(767px) {
     margin-left: auto;
     margin-right: auto;
   }
 }
 .container__image {
-  width: 100%;
+  // width: 100%;
   display: block;
   height: 100%;
 }
 .container__text {
   position: absolute;
   top: 0;
-  width: 80%;
+  width: 75%;
+  // word-break: brake-all;
   text-align: center;
   padding-top: 35%;
   color: white;
   text-transform: uppercase;
-  font-weight: bold;
+  // font-weight: bold;
   font-size: 2em;
   @include mQ(767px) {
     padding-top: 20%;
