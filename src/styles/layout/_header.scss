@@ -11,8 +11,8 @@ $gray: lighten($black, 70%);
   text-align: center;
   padding: 5px 0;
   position: absolute;
-  top: 30px;
-  left: 75px;
+  top: -15px;
+  left: 25px;
   &:hover {
     color: $gray;
   }
@@ -22,7 +22,7 @@ $gray: lighten($black, 70%);
 }
 .logo__link {
   // position: absolute;
-  // z-index: 3;
+  z-index: 3;
   border: 1px solid $black;
   display: block;
   width: 100%;
